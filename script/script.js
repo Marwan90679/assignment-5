@@ -12,7 +12,10 @@ function runBtn(id,taskname) {
         const strTaskCompleted = document.getElementById('completed-task-no').innerText;
         const completedTasks = parseInt(strTaskCompleted);
         document.getElementById('completed-task-no').innerText =completedTasks + 1;
- 
+        alert('Board Updated Successfully')
+         if(document.getElementById('assigned-tasks-no').innerText==='0'){
+            alert('Congrats!!! You have completed all the current tasks')
+         }
         const date = new Date();
         const time =date.toLocaleTimeString();
         
