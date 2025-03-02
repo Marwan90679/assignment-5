@@ -46,7 +46,7 @@
                                  <img class="py-[16px] pl-[17px] pr-[6px] w-fit" src="assets/checkbox.png" alt="">
                                  <p  id="completed-task-no" class="pl-2 pr-[6px] text-[32px] font-extrabold">23</p>
                             </div>
-                            <div class="ml-8">
+                            <div class="ml-8" id="theme-box">
                                 <img class="bg-slate-100 p-3 rounded-full" src="assets/theme-btn.png" alt="">
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="ml-[10px] rounded-lg" ">
                          <p class="text-lg font-semibold">Tasks Assigned</p>
-                         <h2  id="assigned-tasks-no" class="font-extrabold text-3xl">5</h2>
+                         <h2   class="font-extrabold text-3xl">0<span id="assigned-tasks-no">5</span></h2>
                         </div>
                      </div>
                       </div>
@@ -88,11 +88,15 @@
                          </div>
                         </div>
                       <div>
-                        <div id="day" class="ml-4 mt-2 text-xl  rounded-lg">
+                        <div  class="ml-4 mt-2 text-xl  rounded-lg">
+                          <p id="day">
 
+                          </p>
                         </div>
-                        <div id="date"  class="ml-4 mt-2 text-xl font-bold rounded-lg">
-                         
+                        <div  class="ml-4 mt-2 text-xl font-bold rounded-lg">
+                           <p id="date" >
+                            
+                          </p>
                         </div>
                       </div>
                      </div>
@@ -238,7 +242,10 @@
         </section>
     </header>
     
+    <script src="script/theme.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/date&time.js"></script>
+    <script src="script/history.js"></script>
 </body>
 </html>
 
