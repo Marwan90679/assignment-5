@@ -1,3 +1,4 @@
+let i =0;
 document.getElementById('theme-box').addEventListener('click',function(){
   const  colors = [
     "rgba(255, 99, 71, 0.5)", "rgba(30, 144, 255, 0.5)", "rgba(34, 139, 34, 0.5)",
