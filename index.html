@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devBoard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script></head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<style>
+   .disabled-button {
+    background-color: rgba(55, 82, 253, 0.3) 
+} 
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.history {
+    background-color: #F4F7FF;
+    padding: 10px;
+    margin-left: 31px;
+    margin-right: 17px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+</style>
+
+
+</head>
+<body class="poppins bg-slate-100">
+    <header>
+        <nav class="w-[1536px] mx-auto pt-6 ">
+            <div class="navbar bg-white  rounded-lg">
+            
+                        <div class="flex items-center ">
+                            <div class="flex items-center pt-[24px] pb-[19px] pl-[24px]">
+                                <img src="assets/logo.png" alt="">
+                                <a class="text-4xl ml-[11.1px]">Dev<span class="text-[#00303C]  font-bold">Board</span></a>
+                           </div>
+                            <div  " class="flex ml-[1015px] bg-slate-100  items-center rounded-4xl">
+                                 <img class="py-[16px] pl-[17px] pr-[6px] w-fit" src="assets/checkbox.png" alt="">
+                                 <p  id="completed-task-no" class="pl-2 pr-[6px] text-[32px] font-extrabold">23</p>
+                            </div>
+                            <div class="ml-8">
+                                <img class="bg-slate-100 p-3 rounded-full" src="assets/theme-btn.png" alt="">
+                            </div>
+                        </div>
+             </div>      
+            
+             
+                              
+        </nav>
+
+        <section class="w-[1536px] mx-auto mt-6  flex">
+            
+          <section>
+            <div class="p-[24px] bg-white rounded-lg">
+                <div class="flex space-x-[24px] mb-[31.6px]">
+                 <div class=" w-[263px]  bg-slate-100 rounded-lg">
+                     <div class="flex    pl-[32px] pr-[10px] items-center bg">
+                        <div class="py-[32px]">
+                         <div class="bg-white rounded-full p-[18px]">
+                             <img src="assets/checkbox.png" alt="">
+                         </div>
+                        </div>
+                        <div class="ml-[10px] rounded-lg" ">
+                         <p class="text-lg font-semibold">Tasks Assigned</p>
+                         <h2  id="assigned-tasks-no" class="font-extrabold text-3xl">5</h2>
+                        </div>
+                     </div>
+                      </div>
+                      <div class="w-[524px] bg-linear-to-r bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg">
+                      <div  id="discover-box" class="pt-[22px] pb-[25px] pr-[85px] pl-[40px] flex items-center">
+                         <img  class="mr-[22px]" src="assets/board.png" alt="">
+                       <h3 class="font-medium text-[24px]  text-white">Discover Something  <br>New Today!</h3>
+                      </div>
+                    </div>
+                    <div class="w-[263px]   bg-slate-100 rounded-lg">
+                     <div class="flex    pl-[32px] pr-[20px] items-center bg">
+                        <div class="py-[32px]">
+                         <div class="bg-white rounded-full p-[18px]">
+                             <img src="assets/calender.png" alt="">
+                         </div>
+                        </div>
+                      <div>
+                        <div id="day" class="ml-4 mt-2 text-xl  rounded-lg">
+
+                        </div>
+                        <div id="date"  class="ml-4 mt-2 text-xl font-bold rounded-lg">
+                         
+                        </div>
+                      </div>
+                     </div>
+                      </div>
+                </div>
+                <hr class="  border-t-[2px] border-dashed border-[#3752FD33] opacity-[80%]">
+              <div class="grid grid-cols-3 space-x-[36px]">
+                 <div class="bg-slate-100 mt-[24px] pl-[24px] pt-[24px] rounded-xl">
+                     <div>
+                         <p class="  bg-white rounded-lg py-[8px] px-[16px] w-[114px]" >ShopEase</p>
+                     <h3 id="taskname1" class="font-medium text-[24px] text-[#00303C] mt-[16px] mb-[16px]">Fix Mobile Button Issue </h3>
+                     <p class="overflow-y-scroll p-[16px] w-[294px] h-[92px] rounded-md bg-white mb-[24px] mr-[40px]">Debug using Chrome DevTools,
+                          check for overlapping elements, and ensure onClick works properly
+                         and ensure onClick works properly</p>
+                         <hr class="w-[294px]  border-t-[2px] border-dashed border-[#3752FD33] opacity-[80%]">
+                         <div class="flex mt-[12px]">
+                             <div class="mr-[48px]">
+                                 <p class="text-[14px]">Deadline</p>
+                                 <p class="font-medium ">21 March 2025</p>
+                             </div>
+                             <div class="ml-2" ">
+                                 <button  id="task1"  class="btn btn-primary border-none bg-blue-700 font-normal">Completed</button>
+                             </div>
+                         </div>
+     
+                     </div>
+                   </div>
+                 <div class="bg-slate-100 mt-[24px] pl-[24px] pt-[24px] rounded-xl">
+                     <div>
+                         <p class="  bg-white rounded-lg py-[8px] px-[16px] w-[114px]" >CloudSync</p>
+                     <h3 id="taskname2" class="font-medium text-[24px] text-[#00303C] mt-[16px] mb-[16px]">Add Dark Mode </h3>
+                     <p class="overflow-y-scroll p-[16px] w-[294px] h-[92px] rounded-md bg-white mb-[24px]">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                         <hr class="w-[294px]  border-t-[2px] border-dashed border-[#3752FD33] opacity-[80%]">
+                         <div class="flex mt-[12px]">
+                             <div class="mr-[48px]">
+                                 <p class="text-[14px]">Deadline</p>
+                                 <p class="font-medium ">21 March 2025</p>
+                             </div>
+                             <div class="ml-2" >
+                                 <button id="task2" disabled class="text-white disabled-button btn btn-primary border-none bg-blue-700 font-normal">Completed</button>
+                             </div>
+                         </div>
+     
+                     </div>
+                   </div>
+                   <div class="bg-slate-100 mt-[24px] pl-[24px] pt-[24px] rounded-xl mr-[24px]">
+                     <div>
+                         <p class="bg-white rounded-lg py-[8px] px-[16px] w-[103px]">SwiftPay</p>
+                         <h3 id="taskname3"  class="font-medium text-[24px] text-[#00303C] mt-[16px] mb-[16px]">Optimize  Home page </h3>
+                         <p class="p-[16px] w-[294px] max-h-[92px] rounded-md bg-white mb-[24px] overflow-y-scroll ">
+                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+ and ensure onClick works properly
+                         </p>
+                         <hr class="w-[294px] border-t-[2px] border-dashed border-[#3752FD33] opacity-[80%]">
+                         <div class="flex mt-[12px] mb-[20px]">
+                             <div class="mr-[48px]">
+                                 <p class="text-[14px]">Deadline</p>
+                                 <p class="font-medium">21 March 2025</p>
+                             </div>
+                             <div class="ml-3" >
+                                 <button   id="task3" class="btn btn-primary border-none  font-normal bg-blue-700">Completed</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div class="bg-slate-100 mt-[24px] pl-[24px] pt-[24px] rounded-xl">
+                     <div>
+                         <p class="  bg-white rounded-lg py-[8px] px-[16px] w-[74px]" >Meta</p>
+                     <h3  id="taskname4" class="font-medium text-[24px] text-[#00303C] mt-[16px] mb-[16px]">Add new emoji 🤲 </h3>
+                     <p class="overflow-y-scroll p-[16px] w-[294px] h-[92px] rounded-md bg-white mb-[24px] mr-[40px]">Debug using Chrome DevTools,
+                          check for overlapping elements, and ensure onClick works properly
+                         and ensure onClick works properly</p>
+                         <hr class="w-[294px]  border-t-[2px] border-dashed border-[#3752FD33] opacity-[80%]">
+                         <div class="flex mt-[12px]">
+                             <div class="mr-[48px]">
+                                 <p class="text-[14px]">Deadline</p>
+                                 <p class="font-medium ">21 March 2025</p>
+                             </div>
+                             <div class="ml-2">
+                                 <button  id="task4"  class="btn btn-primary border-none bg-blue-700 font-normal">Completed</button>
+                             </div>
+                         </div>
+     
+                     </div>
+                   </div>
+                 <div class="bg-slate-100 mt-[24px] pl-[24px] pt-[24px] rounded-xl">
+                     <div>
+                         <p class="  bg-white rounded-lg py-[8px] px-[16px] w-[125px]" >Google LLC</p>
+                     <h3   id="taskname5" class="font-medium text-[24px] text-[#00303C] mt-[16px] mb-[16px]">Integrate OpenAI API  </h3>
+                     <p class="overflow-y-scroll p-[16px] w-[294px] h-[92px] rounded-md bg-white mb-[24px]">Debug using Chrome DevTools,
+                          check for overlapping elements, and ensure onClick works properly
+                         and ensure onClick works properly</p>
+                         <hr class="w-[294px]  border-t-[2px] border-dashed border-[#3752FD33] opacity-[80%]">
+                         <div class="flex mt-[12px]">
+                             <div class="mr-[48px]">
+                                 <p class="text-[14px]">Deadline</p>
+                                 <p class="font-medium ">21 March 2025</p>
+                             </div>
+                             <div class="ml-2"  ">
+                                 <button id="task5"  class="btn btn-primary border-none bg-blue-700 font-normal">Completed</button>
+                             </div>
+                         </div>
+     
+                     </div>
+                   </div>
+                   <div class="bg-slate-100 mt-[24px] pl-[24px] pt-[24px] rounded-xl mr-[24px]">
+                     <div>
+                         <p class="bg-white rounded-lg py-[8px] px-[16px] w-[118px]">Glassdoor</p>
+                         <h3  id="taskname6" class="font-medium text-[24px] text-[#00303C] mt-[16px] mb-[16px]">Improve Job searching </h3>
+                         <p class="p-[16px] w-[294px] max-h-[92px] rounded-md bg-white mb-[24px] overflow-y-scroll ">
+                             Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly.
+                         </p>
+                         <hr class="w-[294px]  border-t-[2px] border-dashed border-[#3752FD33] opacity-[80%]">
+                         <div class="flex mt-[12px] mb-[20px]">
+                             <div class="mr-[48px]">
+                                 <p class="text-[14px]">Deadline</p>
+                                 <p class="font-medium">21 March 2025</p>
+                             </div>
+                             <div class="ml-3" >
+                                 <button  id="task6" class="btn btn-primary border-none font-normal bg-blue-700">Completed</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+          </section>
+          <section class="h-[918px] w-[366px] bg-white ml-5 rounded-xl">
+             <div class="">
+                <div class="flex items-center pt-6 pl-24 mb-4 ">
+                    <img src="assets/activity.png" alt="">
+                    <p class="ml-3 text-[20px]  font-medium ">Activity Log </p>
+                 </div>
+                 <div class="text-center">
+                    <button id="clear-history"  class="btn btn-primary border-none bg-blue-700 font-medium poppins">Clear History</button>
+                 </div>
+                 <hr class="mt-5 mb-5 border-t-[2px] border-dashed border-[#3752FD33] opacity-[80%]">
+             </div>
+             <div id="task-history">
+            
+             </div>
+          </section>
+                
+        </section>
+    </header>
+    
+    <script src="utilities/utility.js"></script>
+</body>
+</html>
+
